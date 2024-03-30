@@ -39,6 +39,10 @@ Once you've input your desired inputs click the + button at the top left and inp
 ### Thank you
 Thank you for checking out Auto Clicker. Any contributions are welcome.
 
+<!---
+Similar Copy: https://github.com/programmingKyle/auto-clicker
+--->
+
 
   
 
