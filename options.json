@@ -1,0 +1,14 @@
+{
+  "mouseButtonInput": "left",
+  "delayCheckbox": false,
+  "delayAmount": "1000",
+  "typeInput": "single",
+  "repeatSetTimesInput": false,
+  "repeatTimes": "1",
+  "alwaysOnTopCheckbox": false,
+  "loopInput": true,
+  "hoursInput": "0",
+  "minutesInput": "0",
+  "secondsInput": "0",
+  "millisecondsInput": "0"
+}

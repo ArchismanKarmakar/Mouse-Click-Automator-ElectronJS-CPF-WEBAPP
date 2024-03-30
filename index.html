@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Click Automator</title>
+  <link rel="stylesheet" href="assets/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<body>
+
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary border-bottom border-body" data-bs-theme="dark">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+      <div class="" onclick="location.href='index.html'">
+        <img id="img-primary-logo" src="assets/icon/icon.png" alt="lock" class="rounded float-start img-fluid">
+      </div>
+      <div id="heading-ceyfefeo" class="">
+        <span class=" ">Mouse Click Automator</span>
+      </div>
+      <div class="">
+        <span class="primary-header-auth-link"><a href="https://www.github.com/ArchismanKarmakar"><img
+              id="primary-repo-github-target" src="assets/icon/github-dark.png" alt="lock"
+              class="rounded float-start img-fluid"></a></span>
+      </div>
+    </div>
+  </nav>
+  <div id="deleteProfileOverlay" class="overlay container">
+    <div id="deleteProfileContent" class="centered-container">
+      <div id="rwpr8iq30r9">
+        <h2>Delete Profile?</h2>
+        <h5 id="deleteSelectedProfileText" class="selected-profile-text">Selected Profile</h5>
+      </div>
+      <div id="fq7o38gf7q">
+        <button class="btn btn-primary" id="deleteProfileButton" type="button" aria-label="fnw89ehfu">Confirm</button>
+        <button class="btn btn-primary" id="backDeleteButton" type="button" aria-label="q3gr87oiyqf">Back</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="addProfileOverlay" class="overlay">
+    <div id="addProfileContent" class="centered-container">
+      <div id="fw4oifh83whrfqio3">
+        <button id="addProfileCloseButton" class="slim-button fa-solid fa-x btn btn-danger" aria-label="gno4wuyuf4wqr"
+          type="button"></button>
+      </div>
+      <div id="nigowh49">
+        <h2>Add Profile</h2>
+      </div>
+      <input id="addProfileInput" type="text" placeholder="Input Title">
+      <div id="gnweiury89w">
+        <button class="input-button btn btn-primary" id="addProfileButton" type="button"
+          aria-label="f4w8hguwg">Add</button>
+      </div>
+    </div>
+  </div>
+  <!-- <form>
+    <div class="base-grid container">
+      <div class="frame-grid">
+        <h3 id="dnwyr893qirfq3">Auto Clicker</h3>
+        <button id="minimizeButton" class="fa fa-window-minimize" aria-label="Minimize" type='button'></button>
+        <button id="exitButton" class="fa-solid fa-power-off" aria-label="Exit" type='button'></button>
+      </div>
+    </form> -->
+
+  <div class="content-grid container">
+    <div class="left-side-grid">
+      <div class="click-options-grid">
+        <h4 id="fnq3hq3r3qr9">Click Options</h4>
+        <div class="click-options-content-grid">
+          <div id="fqu3rh98q3">
+            <h5>Button:</h5>
+            <select id="mouseButtonInput" aria-label="mouseButtonInput">
+              <option value="left">Left</option>
+              <option value="right">Right</option>
+              <option value="middle">Middle</option>
+            </select>
+          </div>
+          <div id="dnq397ryq3q">
+            <h5>Click Type:</h5>
+            <select id="typeInput" aria-label="typeInput">
+              <option value="single">Single</option>
+              <option value="double">Double</option>
+              <option value="hold">Hold</option>
+            </select>
+          </div>
+          <div id="fnw9ugf9q3">
+            <input id="alwaysOnTopCheckbox" type="checkbox" placeholder="Always on Top">
+            <h5>Always On Top</h5>
+          </div>
+        </div>
+        <div class="click-options-content-grid">
+          <div id="gn9w47g972">
+            <input id="delayCheckbox" type="checkbox" placeholder="Set Delay">
+            <h5>Start Delay:</h5>
+            <input id="delayAmount" type="number" value="1000" placeholder="Delay Value">
+          </div>
+
+          <div id="vdgh896w7">
+            <input id="repeatSetTimesInput" type="radio" placeholder="Repeat">
+            <h5>Repeat:</h5>
+            <input id="repeatTimes" type="number" value="1" maxlength="6" placeholder="Repeat By">
+          </div>
+          <div id="foi0qr">
+            <input id="loopInput" type="radio" checked placeholder="Loop">
+            <h5>Loop Until Stopped</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="click-interval-grid">
+        <h4 id="h4-aoho34qvr">Interval</h4>
+        <div>
+          <h6>Hours</h6>
+          <input id="hoursInput" type="number" value="0" placeholder="Hours">
+        </div>
+        <div>
+          <h6>Minutes</h6>
+          <input id="minutesInput" type="number" value="0" placeholder="Minutes">
+        </div>
+        <div>
+          <h6>Seconds</h6>
+          <input id="secondsInput" type="number" value="1" placeholder="Seconds">
+        </div>
+        <div>
+          <h6>Milliseconds</h6>
+          <input id="millisecondsInput" type="number" value="0" placeholder="Milli Seconds">
+        </div>
+      </div>
+
+      <div class="container a28r98u2">
+        <button class="input-button btn btn-primary" id="startButton" type="button">Start [F9]</button>
+        <button class="input-button btn btn-danger" id="stopButton" type="button"
+          aria-label="input-btnsihg-f9">Stop
+          [F9]</button>
+      </div>
+
+    </div>
+    <div class="right-side-grid">
+      <div id="iu4w98hu">
+        <h4>Profiles</h4>
+        <button id="toggleAddProfileButton" class="slim-button fas fa-plus btn btn-primary" type="button"
+          aria-label="toggleAddProfileButton btn btn-primary"></button>
+      </div>
+      <div id="selectedProfileDiv" class="selected-profile-div">
+        <button id="toggleEditBackButton" class="slim-button fas fa-arrow-left btn btn-primary" type="button"
+          aria-label="toggleEditBackButton"></button>
+        <button id="toggleEditProfileButton" class="slim-button fas fa-edit btn btn-primary" type="button"
+          aria-label="toggleEditProfileButton"></button>
+        <input id="editProfileTitleInput" type="text" placeholder="Input Title" aria-label="editProfileTitleInput">
+        <h6 id="selectedProfileText" class="selected-profile-text">No Profile Selected</h6>
+        <button id="toggleDeleteProfileButton" class="slim-button fas fa-trash btn btn-primary" type="button"
+          aria-label="toggleAddProfileButton"></button>
+      </div>
+      <div id="profilesContent" class="profiles-grid">
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+
+<script src="autoclicker.js"></script>
+<script src="profiles.js"></script>
+<script src="deleteProfile.js"></script>
+<script src="editProfile.js"></script>
+<script src="frame.js"></script>
+
+</html>
